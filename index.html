@@ -1,79 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <title>Shadow Slave - Web Novel por Guiltythree</title>
     <meta charset="UTF-8">
     <meta name="description" content="Uma página sobre a web novel Shadow Slave, escrita por Guiltythree.">
-</head>
-<body style="background-color: #121212; color: #f1f1f1; font-family: Arial, sans-serif;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos gerais para o corpo da página */
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
 
-<!-- Menu de Navegação -->
+        /* Menu de Navegação */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #555;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #66ccff;
+        }
+
+        /* Títulos */
+        h1,
+        h2,
+        h3 {
+            color: #ff4500;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Tabela de Personagens */
+        table {
+            width: 50%;
+            border: 1px solid #555;
+            margin-top: 20px;
+            background-color: #333;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #444;
+        }
+
+        /* Links */
+        a {
+            color: #66ccff;
+            text-decoration: none;
+        }
+
+        /* Imagem */
+        img {
+            max-width: 100%;
+        }
+
+        /* Estilos para o formulário */
+        form {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        form h2 {
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #555;
+            background-color: #222;
+            color: #f1f1f1;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        /* Estilo para os botões */
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #e03e00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Menu de Navegação -->
     <nav>
-        <ul style="list-style-type: none; padding: 0; text-align: center; background-color: #555">
-            <li style="display: inline; margin-right: 20px;"><a href="#home" style="text-decoration: none; color: #66ccff;">Início</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="#sobre" style="text-decoration: none; color: #66ccff;">Sobre</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="#tabela-personagens" style="text-decoration: none; color: #66ccff;">Tabela de Personagens</a></li>
-            <li style="display: inline; margin-right: 20px;"><a href="#link-úteis" style="text-decoration: none; color: #66ccff;">Links Úteis</a></li>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#tabela-personagens">Tabela de Personagens</a></li>
+            <li><a href="#links-uteis">Links Úteis</a></li>
         </ul>
     </nav>
-	<!-- Sobre a obra -->
-   <h1 style="text-align: center; color: #ff4500;">Bem vindo a minha página sobre Shadow Slave</h1>
-   <hr>
-   <h2 style="color: #ff4500;" id="sobre">Sobre a obra</h2>
 
+    <!-- Sobre a obra -->
+    <h1>Bem-vindo a minha página sobre Shadow Slave</h1>
+    <hr>
+    <h2 id="sobre">Sobre a obra</h2>
 
-    <p>"Shadow Slave" é uma web novel emocionante escrita por Guiltythree. A história segue Sunny, um jovem que vive em um futuro distópico onde algumas pessoas<br> são forçadas a visitar periodicamente um mundo mágico e lutar contra terríveis monstros. Se sobrevivem, recebem poderes especiais.</p>
-    <p>Sunny é um jovem cínico e desiludido, mas com um forte desejo de sobreviver e prosperar nesse mundo. <br>Ele deve superar inúmeros desafios e enfrentar perigos desconhecidos para libertar-se e descobrir seu verdadeiro potencial.</p>
-    <p>A obra é cheia de ação intensa, mistério, e reviravoltas que mantêm o leitor preso à trama. Cada personagem possui uma<br> complexidade única, oferecendo uma perspectiva interessante sobre a natureza humana e o poder da escolha.</p>
+    <p>"Shadow Slave" é uma web novel emocionante escrita por Guiltythree. A história segue Sunny, um jovem que vive em
+        um futuro distópico onde algumas pessoas são forçadas a visitar periodicamente um mundo mágico e lutar
+        contra terríveis monstros. Se sobrevivem, recebem poderes especiais.</p>
 
-	<h2 style="color: #ff4500;"> Sinopse da obra</h2>
-	
-	<p>"Crescendo na pobreza, Sunny nunca esperou nada de bom da vida. No entanto, nem mesmo ele antecipou ser escolhido pelo Feitiço do Pesadelo e se tornar<br> um dos Despertos um grupo de elite de pessoas dotadas de poderes sobrenaturais. Transportado para um mundo mágico arruinado, ele se viu enfrentando terríveis<br> monstros e outros Despertos em uma batalha mortal pela sobrevivência. O pior de tudo, o poder divino que ele recebeu acabou tendo um pequeno, mas potencialmente fatal efeito colateral…"</p>
-	<hr>
-    <!-- Imagem de referencia -->
-	<img src="https://i2.wp.com/centralnovel.com/wp-content/uploads/2023/03/shadow-slave-capa-1-e1727966668634.jpg" alt="Imagem da Web Novel Shadow Slave" style="max-width: 100%;">
+    <h2>Sinopse da obra</h2>
 
-	<!-- Tabela com informaçõs dos personagem -->
-    <h2 style="color: #ff4500;" id="tabela-personagens">Tabela de Personagens</h2>
-    <table style="width: 100%; border: 1px solid #555; margin-top: 20px; background-color: #333;">
+    <p>"Crescendo na pobreza, Sunny nunca esperou nada de bom da vida. No entanto, nem mesmo ele antecipou ser escolhido
+        pelo Feitiço do Pesadelo e se tornar um dos Despertos, um grupo de elite de pessoas dotadas de poderes
+        sobrenaturais."</p>
+    <hr>
+
+    <!-- Imagem de referência -->
+    <img src="https://i2.wp.com/centralnovel.com/wp-content/uploads/2023/03/shadow-slave-capa-1-e1727966668634.jpg"
+        alt="Imagem da Web Novel Shadow Slave">
+
+    <!-- Tabela com informações dos personagens -->
+    <h2 id="tabela-personagens">Tabela de Personagens</h2>
+    <table>
         <thead>
             <tr>
-                <th style="padding: 10px; text-align: left; background-color: #444;">Nome</th>
-                <th style="padding: 10px; text-align: left; background-color: #444;">Habilidade</th>
-                <th style="padding: 10px; text-align: left; background-color: #444;">Alinhamento</th>
+                <th>Nome</th>
+                <th>Habilidade</th>
+                <th>Alinhamento</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td style="padding: 10px; text-align: left;">Sunny</td>
-                <td style="padding: 10px; text-align: left;">Manipulação de Sombras</td>
-                <td style="padding: 10px; text-align: left;">Anti-Herói</td>
+                <td>Sunny</td>
+                <td>Manipulação de Sombras</td>
+                <td>Anti-Herói</td>
             </tr>
             <tr>
-                <td style="padding: 10px; text-align: left;">Nephis</td>
-                <td style="padding: 10px; text-align: left;">Chamas branca</td>
-                <td style="padding: 10px; text-align: left;">Herói</td>
+                <td>Nephis</td>
+                <td>Chamas brancas</td>
+                <td>Herói</td>
             </tr>
             <tr>
-                <td style="padding: 10px; text-align: left;">Cassie</td>
-                <td style="padding: 10px; text-align: left;">Clarividência</td>
-                <td style="padding: 10px; text-align: left;">Neutra</td>
+                <td>Cassie</td>
+                <td>Clarividência</td>
+                <td>Neutra</td>
             </tr>
         </tbody>
     </table>
-	<!-- Links não ordenados -->
-    <h3 style="color: #ff4500;" id="link-úteis">Links Úteis</h3>
 
+    <!-- Links não ordenados -->
+    <h3 id="links-uteis">Links Úteis</h3>
     <ul>
-        <li><a href="https://www.webnovel.com/book/shadow-slave_22196546206090805" style="color: #66ccff; text-decoration: none;">Leia Shadow Slave no site oficial</a></li>
-		 <li><a href="https://centralnovel.com/series/shadow-slave-20230928/" target="_blank" style="color:#66ccff; text-decoration: none;">Leia Shadow Slave traduzido</a></li>
-        <li><a href="https://shadowslave.fandom.com/wiki/Shadow_Slave_Wiki" style="color: #66ccff; text-decoration: none;">Ir para a Wiki da obra</a></li>
-		<li><a href="downloads/Personagens-Principais.jpg" style="color: #66ccff; text-decoration: none;" download>Baixar foto</a></li>
-		<li><a href="https://wa.me/123456789" style="color: #66ccff; text-decoration: none;">Chamar no WhatsApp</a></li>
-        <li><a href="mailto:email@exemplo.com" style="color: #66ccff; text-decoration: none;">Enviar E-mail</a></li>
+        <li><a href="https://www.webnovel.com/book/shadow-slave_22196546206090805">Leia Shadow Slave no site oficial</a>
+        </li>
+        <li><a href="https://centralnovel.com/series/shadow-slave-20230928/" target="_blank">Leia Shadow Slave
+                traduzido</a></li>
+        <li><a href="https://shadowslave.fandom.com/wiki/Shadow_Slave_Wiki">Ir para a Wiki da obra</a></li>
+        <li><a href="downloads/Personagens-Principais.jpg" download>Baixar foto</a></li>
+        <li><a href="https://wa.me/123456789">Chamar no WhatsApp</a></li>
+        <li><a href="mailto:email@exemplo.com">Enviar E-mail</a></li>
     </ul>
 
-    <p>Esta web novel é incrível! <br> Cada capítulo é cheio de emoções e surpresas.</p>
+    <p>Esta web novel é incrível! Cada capítulo é cheio de emoções e surpresas.</p>
 
+    <!-- Começo do formulário -->
+    <form action="legal.php" method="post">
+        <fieldset style="padding: 30px;">
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" maxlength="100" required placeholder="Digite seu nome completo">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" minlength="4" required placeholder="Digite uma senha">
+
+            <label for="data-nascimento">Data de nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="telefone">Número de telefone</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+            <!-- Seleção de país -->
+            <label for="pais">Selecione seu país</label>
+            <select id="pais" name="pais" required>
+                <option value="" disabled selected>Selecione seu país</option>
+
+                <option value="brasil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="portugal">Portugal</option>
+                <option value="estados-unidos">Estados Unidos</option>
+
+            </select>
+            <!-- Selecionar gênero -->
+            <fieldset>
+                <legend>Selecione seu gênero:</legend>
+                <input type="radio" name="sexo" id="masc" required>
+                <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" required>
+                <label for="fem">Feminino</label><br>
+                <input type="radio" name="sexo" id="outro" required>
+                <label for="outro">Outro</label>
+            </fieldset>
+            <br>
+            <!-- Campo de comentário -->
+            <label for="comentarios" class="label-comentario">Deixe seu comentário</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Deixe seu comentário"></textarea>
+            <label for="termos">
+                <input type="checkbox" id="termos" name="termos" required> Aceito os termos e condições
+            </label>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
 </body>
+
 </html>
